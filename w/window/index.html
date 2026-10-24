@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>窗戶 chuānghu · window · Little Words 小小字卡</title>
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="icon" href="../../assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="word theme-house" style="--theme:#8B6FE0">
+<header class="top">
+  <a class="back" href="../../index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="../../scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <a class="chip" href="../../index.html#house"><span lang="zh-Hant-TW">房子</span> <span class="py">fángzi</span> <span class="en">· House</span></a>
+  <section class="hero">
+    <img class="art" src="../../assets/icons/window.svg" alt="window" width="200" height="200">
+    <h1 class="big" lang="zh-Hant-TW">窗戶</h1>
+    <p class="pinyin">chuānghu</p>
+    <p class="gloss en">window</p>
+    <button class="play" id="play" type="button" data-say="窗戶" aria-label="Play the word">▶ <span lang="zh-Hant-TW">聽</span> <span class="py">tīng</span></button>
+    <p class="voice-note" id="voiceNote" hidden></p>
+  </section>
+  <section class="cards">
+    <button class="card-btn" type="button" data-open="roleplay">🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play</span></button>
+    <button class="card-btn" type="button" data-open="questions">❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Questions</span></button>
+  </section>
+  <nav class="pager"><a class="nav prev" href="../door/">← <span lang="zh-Hant-TW">門</span></a><a class="nav next" href="../bed/"><span lang="zh-Hant-TW">床</span> →</a></nav>
+</main>
+<dialog id="roleplay" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play: act it out</span></h2>
+  <ol class="script"><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="窗戶在哪裡？我們去找窗戶！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">窗戶在哪裡？我們去找窗戶！</span></div>
+  <div class="py">Chuānghu zài nǎlǐ? Wǒmen qù zhǎo chuānghu!</div>
+  <div class="en">Where is the window? Let&#x27;s go find it!</div>
+  <div class="act en">🎭 Hold hands and walk around the room.</div>
+</li><li class="line kid">
+  <div class="spk"><span lang="zh-Hant-TW">寶寶</span> <span class="py">bǎobǎo</span> <span class="en">· Little one</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="這裡！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這裡！</span></div>
+  <div class="py">Zhèlǐ!</div>
+  <div class="en">Here!</div>
+  <div class="act en">🎭 Little one points to it or pats the sticker.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="對！這是窗戶。" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">對！這是窗戶。</span></div>
+  <div class="py">Duì! Zhè shì chuānghu.</div>
+  <div class="en">Yes! This is the window.</div>
+  <div class="act en">🎭 Touch it together and say the word slowly.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="窗戶外面有什麼？" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">窗戶外面有什麼？</span></div>
+  <div class="py">Chuānghu wàimiàn yǒu shénme?</div>
+  <div class="en">What&#x27;s outside the window?</div>
+  <div class="act en">🎭 Look out together and name what you see: 樹 tree, 車 car.</div>
+</li></ol>
+</dialog>
+<dialog id="questions" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Ask your little one</span></h2>
+  <ol class="qs"><li><div class="say"><button class="mini say-btn" type="button" data-say="窗戶在哪裡？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">窗戶在哪裡？</span></div>
+  <div class="py">Chuānghu zài nǎlǐ?</div><div class="en">Where is the window? (point to it)</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="這是什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這是什麼？</span></div>
+  <div class="py">Zhè shì shénme?</div><div class="en">What is this?</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="我們跟窗戶說早安！" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">我們跟窗戶說早安！</span></div>
+  <div class="py">Wǒmen gēn chuānghu shuō zǎoān!</div><div class="en">Let&#x27;s say good morning to the window!</div></li></ol>
+  <p class="tip en">Ask, wait 5 seconds, then answer it yourself with a smile. Pointing, sounds and words all count.</p>
+</dialog>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

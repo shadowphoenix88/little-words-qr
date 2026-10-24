@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>掃描 Scan · Little Words 小小字卡</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="scan">
+<header class="top">
+  <a class="back" href="index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <section class="scanner">
+    <div class="viewport"><video id="video" playsinline muted></video><div class="frame"></div></div>
+    <button class="play" id="start" type="button">📷 開始 <span class="en">Start camera</span></button>
+    <button class="btn ghost" id="stop" type="button" hidden>⏹ 停止 <span class="en">Stop</span></button>
+    <p class="status" id="status">Point the camera at a word card or sticker. The word plays automatically.</p>
+  </section>
+  <section class="result" id="result" hidden>
+    <img id="rArt" class="art" alt="" width="160" height="160">
+    <div class="big" id="rZh" lang="zh-Hant-TW"></div>
+    <div class="pinyin" id="rPy"></div>
+    <div class="gloss en" id="rEn"></div>
+    <p><a class="btn ghost" id="rLink" href="#">🎭 ❓ <span class="en">Open the word page</span></a></p>
+  </section>
+  <p class="tip en">After the first visit the pages also work offline (cached on this device). Only codes from this site are played; other QR codes are ignored (no links are opened). Camera images never leave the device.
+  Grown-up supervision always; keep the phone in a sturdy case.</p>
+</main>
+<script src="assets/words.js"></script>
+<script src="assets/jsQR.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/scan.js"></script>
+</body>
+</html>

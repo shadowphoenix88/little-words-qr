@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>魚 yú · fish · Little Words 小小字卡</title>
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="icon" href="../../assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="word theme-animals" style="--theme:#FF7A45">
+<header class="top">
+  <a class="back" href="../../index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="../../scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <a class="chip" href="../../index.html#animals"><span lang="zh-Hant-TW">動物</span> <span class="py">dòngwù</span> <span class="en">· Animals</span></a>
+  <section class="hero">
+    <img class="art" src="../../assets/icons/fish.svg" alt="fish" width="200" height="200">
+    <h1 class="big" lang="zh-Hant-TW">魚</h1>
+    <p class="pinyin">yú</p>
+    <p class="gloss en">fish</p>
+    <button class="play" id="play" type="button" data-say="魚" aria-label="Play the word">▶ <span lang="zh-Hant-TW">聽</span> <span class="py">tīng</span></button>
+    <p class="voice-note" id="voiceNote" hidden></p>
+  </section>
+  <section class="cards">
+    <button class="card-btn" type="button" data-open="roleplay">🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play</span></button>
+    <button class="card-btn" type="button" data-open="questions">❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Questions</span></button>
+  </section>
+  <nav class="pager"><a class="nav prev" href="../duck/">← <span lang="zh-Hant-TW">鴨子</span></a><a class="nav next" href="../bird/"><span lang="zh-Hant-TW">鳥</span> →</a></nav>
+</main>
+<dialog id="roleplay" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play: act it out</span></h2>
+  <ol class="script"><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="你看，魚來了！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">你看，魚來了！</span></div>
+  <div class="py">Nǐ kàn, yú lái le!</div>
+  <div class="en">Look, here comes the fish!</div>
+  <div class="act en">🎭 Point to the picture, then walk two fingers across the page.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="魚說：啵啵！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">魚說：啵啵！</span></div>
+  <div class="py">Yú shuō: bōbō!</div>
+  <div class="en">The fish says blub blub!</div>
+  <div class="act en">🎭 Use a big, silly voice.</div>
+</li><li class="line kid">
+  <div class="spk"><span lang="zh-Hant-TW">寶寶</span> <span class="py">bǎobǎo</span> <span class="en">· Little one</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="啵啵！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">啵啵！</span></div>
+  <div class="py">Bōbō!</div>
+  <div class="en">Blub blub!</div>
+  <div class="act en">🎭 Little one&#x27;s turn. Any sound counts; cheer!</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="我們來游泳！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">我們來游泳！</span></div>
+  <div class="py">Wǒmen lái yóuyǒng!</div>
+  <div class="en">Let&#x27;s swim!</div>
+  <div class="act en">🎭 Palms together, wiggle them forward like a fish.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="魚，掰掰！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">魚，掰掰！</span></div>
+  <div class="py">Yú, bāibāi!</div>
+  <div class="en">Bye-bye, fish!</div>
+  <div class="act en">🎭 Wave goodbye to the picture.</div>
+</li></ol>
+</dialog>
+<dialog id="questions" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Ask your little one</span></h2>
+  <ol class="qs"><li><div class="say"><button class="mini say-btn" type="button" data-say="魚在哪裡？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">魚在哪裡？</span></div>
+  <div class="py">Yú zài nǎlǐ?</div><div class="en">Where is the fish? (point to it)</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="魚怎麼叫？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">魚怎麼叫？</span></div>
+  <div class="py">Yú zěnme jiào?</div><div class="en">What does the fish say?</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="這是什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這是什麼？</span></div>
+  <div class="py">Zhè shì shénme?</div><div class="en">What is this? (any word or sound is a great answer)</div></li></ol>
+  <p class="tip en">Ask, wait 5 seconds, then answer it yourself with a smile. Pointing, sounds and words all count.</p>
+</dialog>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

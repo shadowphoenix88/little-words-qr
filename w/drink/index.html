@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>喝 hē · drink · Little Words 小小字卡</title>
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="icon" href="../../assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="word theme-actions" style="--theme:#3DB86B">
+<header class="top">
+  <a class="back" href="../../index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="../../scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <a class="chip" href="../../index.html#actions"><span lang="zh-Hant-TW">動作</span> <span class="py">dòngzuò</span> <span class="en">· Actions</span></a>
+  <section class="hero">
+    <img class="art" src="../../assets/icons/drink.svg" alt="drink" width="200" height="200">
+    <h1 class="big" lang="zh-Hant-TW">喝</h1>
+    <p class="pinyin">hē</p>
+    <p class="gloss en">drink</p>
+    <button class="play" id="play" type="button" data-say="喝" aria-label="Play the word">▶ <span lang="zh-Hant-TW">聽</span> <span class="py">tīng</span></button>
+    <p class="voice-note" id="voiceNote" hidden></p>
+  </section>
+  <section class="cards">
+    <button class="card-btn" type="button" data-open="roleplay">🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play</span></button>
+    <button class="card-btn" type="button" data-open="questions">❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Questions</span></button>
+  </section>
+  <nav class="pager"><a class="nav prev" href="../eat/">← <span lang="zh-Hant-TW">吃</span></a><a class="nav next" href="../sleep/"><span lang="zh-Hant-TW">睡覺</span> →</a></nav>
+</main>
+<dialog id="roleplay" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play: act it out</span></h2>
+  <ol class="script"><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="我們來喝水！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">我們來喝水！</span></div>
+  <div class="py">Wǒmen lái hē shuǐ!</div>
+  <div class="en">Let&#x27;s drink water!</div>
+  <div class="act en">🎭 Hold a pretend cup and sip: gulp, gulp.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="你看，我會喝水！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">你看，我會喝水！</span></div>
+  <div class="py">Nǐ kàn, wǒ huì hē shuǐ!</div>
+  <div class="en">Look, I can drink water!</div>
+  <div class="act en">🎭 Do it slowly and big.</div>
+</li><li class="line kid">
+  <div class="spk"><span lang="zh-Hant-TW">寶寶</span> <span class="py">bǎobǎo</span> <span class="en">· Little one</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="喝水！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">喝水！</span></div>
+  <div class="py">Hē shuǐ!</div>
+  <div class="en">Drink water!</div>
+  <div class="act en">🎭 Little one&#x27;s turn. Any try counts.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="琪琪也會喝水！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">琪琪也會喝水！</span></div>
+  <div class="py">Qíqí yě huì hē shuǐ!</div>
+  <div class="en">Kiki can drink water too!</div>
+  <div class="act en">🎭 Point to the friend in the picture.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="好棒！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">好棒！</span></div>
+  <div class="py">Hǎo bàng!</div>
+  <div class="en">Great job!</div>
+  <div class="act en">🎭 High five!</div>
+</li></ol>
+</dialog>
+<dialog id="questions" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Ask your little one</span></h2>
+  <ol class="qs"><li><div class="say"><button class="mini say-btn" type="button" data-say="琪琪在做什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">琪琪在做什麼？</span></div>
+  <div class="py">Qíqí zài zuò shénme?</div><div class="en">What is Kiki doing? (喝 hē)</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="你會喝水嗎？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">你會喝水嗎？</span></div>
+  <div class="py">Nǐ huì hē shuǐ ma?</div><div class="en">Can you drink water? Show me!</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="我們用什麼喝水？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">我們用什麼喝水？</span></div>
+  <div class="py">Wǒmen yòng shénme hē shuǐ?</div><div class="en">What do we drink from? (a cup, 杯子)</div></li></ol>
+  <p class="tip en">Ask, wait 5 seconds, then answer it yourself with a smile. Pointing, sounds and words all count.</p>
+</dialog>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

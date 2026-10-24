@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>Little Words 小小字卡</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="index">
+<header class="top">
+  <a class="brand" href="index.html">小小字卡 <span class="en">Little Words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <section class="welcome">
+    <div class="friends"><img src="assets/icons/friend-poppy.svg" alt="Poppy the Bunny" width="56" height="56"><img src="assets/icons/friend-honey.svg" alt="Honey the Bear" width="56" height="56"><img src="assets/icons/friend-kiki.svg" alt="Kiki the Kitten" width="56" height="56"><img src="assets/icons/friend-bean.svg" alt="Bean the Dog" width="56" height="56"></div>
+    <h1>小小字卡 <span class="en">Little Words</span></h1>
+    <p>Tap a picture to hear the word in Taiwan Mandarin (Traditional Chinese), then open <b lang="zh-Hant-TW">演一演</b> (role-play) or <b lang="zh-Hant-TW">問一問</b> (questions). <span class="en">The <b>EN</b> button shows or hides English.</span></p>
+    <p><a class="btn big-scan" href="scan.html">📷 掃描卡片 <span class="en">Scan a card</span></a></p>
+  </section>
+  <section class="theme" id="animals" style="--theme:#FF7A45">
+  <h2><span lang="zh-Hant-TW">動物</span> <span class="py">dòngwù</span> <span class="en">· Animals</span></h2>
+  <div class="grid"><a class="tile" href="w/dog/"><img src="assets/icons/dog.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">狗</b><span class="py">gǒu</span><span class="en">dog</span></a><a class="tile" href="w/cat/"><img src="assets/icons/cat.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">貓</b><span class="py">māo</span><span class="en">cat</span></a><a class="tile" href="w/rabbit/"><img src="assets/icons/rabbit.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">兔子</b><span class="py">tùzi</span><span class="en">rabbit</span></a><a class="tile" href="w/bear/"><img src="assets/icons/bear.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">熊</b><span class="py">xióng</span><span class="en">bear</span></a><a class="tile" href="w/duck/"><img src="assets/icons/duck.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">鴨子</b><span class="py">yāzi</span><span class="en">duck</span></a><a class="tile" href="w/fish/"><img src="assets/icons/fish.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">魚</b><span class="py">yú</span><span class="en">fish</span></a><a class="tile" href="w/bird/"><img src="assets/icons/bird.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">鳥</b><span class="py">niǎo</span><span class="en">bird</span></a><a class="tile" href="w/cow/"><img src="assets/icons/cow.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">牛</b><span class="py">niú</span><span class="en">cow</span></a><a class="tile" href="w/pig/"><img src="assets/icons/pig.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">豬</b><span class="py">zhū</span><span class="en">pig</span></a><a class="tile" href="w/horse/"><img src="assets/icons/horse.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">馬</b><span class="py">mǎ</span><span class="en">horse</span></a><a class="tile" href="w/elephant/"><img src="assets/icons/elephant.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">大象</b><span class="py">dàxiàng</span><span class="en">elephant</span></a><a class="tile" href="w/monkey/"><img src="assets/icons/monkey.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">猴子</b><span class="py">hóuzi</span><span class="en">monkey</span></a></div>
+</section><section class="theme" id="actions" style="--theme:#3DB86B">
+  <h2><span lang="zh-Hant-TW">動作</span> <span class="py">dòngzuò</span> <span class="en">· Actions</span></h2>
+  <div class="grid"><a class="tile" href="w/eat/"><img src="assets/icons/eat.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">吃</b><span class="py">chī</span><span class="en">eat</span></a><a class="tile" href="w/drink/"><img src="assets/icons/drink.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">喝</b><span class="py">hē</span><span class="en">drink</span></a><a class="tile" href="w/sleep/"><img src="assets/icons/sleep.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">睡覺</b><span class="py">shuìjiào</span><span class="en">sleep</span></a><a class="tile" href="w/walk/"><img src="assets/icons/walk.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">走</b><span class="py">zǒu</span><span class="en">walk</span></a><a class="tile" href="w/run/"><img src="assets/icons/run.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">跑</b><span class="py">pǎo</span><span class="en">run</span></a><a class="tile" href="w/jump/"><img src="assets/icons/jump.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">跳</b><span class="py">tiào</span><span class="en">jump</span></a><a class="tile" href="w/sit/"><img src="assets/icons/sit.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">坐</b><span class="py">zuò</span><span class="en">sit</span></a><a class="tile" href="w/clap/"><img src="assets/icons/clap.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">拍手</b><span class="py">pāishǒu</span><span class="en">clap</span></a><a class="tile" href="w/wave/"><img src="assets/icons/wave.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">揮手</b><span class="py">huīshǒu</span><span class="en">wave</span></a><a class="tile" href="w/hug/"><img src="assets/icons/hug.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">抱抱</b><span class="py">bàobào</span><span class="en">hug</span></a><a class="tile" href="w/wash-hands/"><img src="assets/icons/wash-hands.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">洗手</b><span class="py">xǐshǒu</span><span class="en">wash hands</span></a><a class="tile" href="w/sing/"><img src="assets/icons/sing.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">唱歌</b><span class="py">chànggē</span><span class="en">sing</span></a></div>
+</section><section class="theme" id="house" style="--theme:#8B6FE0">
+  <h2><span lang="zh-Hant-TW">房子</span> <span class="py">fángzi</span> <span class="en">· House</span></h2>
+  <div class="grid"><a class="tile" href="w/door/"><img src="assets/icons/door.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">門</b><span class="py">mén</span><span class="en">door</span></a><a class="tile" href="w/window/"><img src="assets/icons/window.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">窗戶</b><span class="py">chuānghu</span><span class="en">window</span></a><a class="tile" href="w/bed/"><img src="assets/icons/bed.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">床</b><span class="py">chuáng</span><span class="en">bed</span></a><a class="tile" href="w/table/"><img src="assets/icons/table.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">桌子</b><span class="py">zhuōzi</span><span class="en">table</span></a><a class="tile" href="w/chair/"><img src="assets/icons/chair.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">椅子</b><span class="py">yǐzi</span><span class="en">chair</span></a><a class="tile" href="w/sofa/"><img src="assets/icons/sofa.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">沙發</b><span class="py">shāfā</span><span class="en">sofa</span></a><a class="tile" href="w/fridge/"><img src="assets/icons/fridge.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">冰箱</b><span class="py">bīngxiāng</span><span class="en">fridge</span></a><a class="tile" href="w/lamp/"><img src="assets/icons/lamp.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">燈</b><span class="py">dēng</span><span class="en">light</span></a><a class="tile" href="w/toilet/"><img src="assets/icons/toilet.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">馬桶</b><span class="py">mǎtǒng</span><span class="en">toilet</span></a><a class="tile" href="w/bathtub/"><img src="assets/icons/bathtub.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">浴缸</b><span class="py">yùgāng</span><span class="en">bathtub</span></a><a class="tile" href="w/stairs/"><img src="assets/icons/stairs.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">樓梯</b><span class="py">lóutī</span><span class="en">stairs</span></a><a class="tile" href="w/tv/"><img src="assets/icons/tv.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">電視</b><span class="py">diànshì</span><span class="en">TV</span></a></div>
+</section><section class="theme" id="things" style="--theme:#2FA7C9">
+  <h2><span lang="zh-Hant-TW">家裡的東西</span> <span class="py">jiālǐ de dōngxi</span> <span class="en">· Things at Home</span></h2>
+  <div class="grid"><a class="tile" href="w/clock/"><img src="assets/icons/clock.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">時鐘</b><span class="py">shízhōng</span><span class="en">clock</span></a><a class="tile" href="w/mirror/"><img src="assets/icons/mirror.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">鏡子</b><span class="py">jìngzi</span><span class="en">mirror</span></a><a class="tile" href="w/cup/"><img src="assets/icons/cup.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">杯子</b><span class="py">bēizi</span><span class="en">cup</span></a><a class="tile" href="w/bowl/"><img src="assets/icons/bowl.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">碗</b><span class="py">wǎn</span><span class="en">bowl</span></a><a class="tile" href="w/spoon/"><img src="assets/icons/spoon.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">湯匙</b><span class="py">tāngchí</span><span class="en">spoon</span></a><a class="tile" href="w/toothbrush/"><img src="assets/icons/toothbrush.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">牙刷</b><span class="py">yáshuā</span><span class="en">toothbrush</span></a><a class="tile" href="w/shoes/"><img src="assets/icons/shoes.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">鞋子</b><span class="py">xiézi</span><span class="en">shoes</span></a><a class="tile" href="w/trash-can/"><img src="assets/icons/trash-can.svg" alt="" width="96" height="96" loading="lazy">
+<b lang="zh-Hant-TW">垃圾桶</b><span class="py">lèsètǒng</span><span class="en">trash can</span></a></div>
+</section>
+  <footer class="foot"><p>No tracking, no cookies, no ads. Speech uses your device's built-in voice. Art is original. Icons and code may be reused for non-commercial family use.</p></footer>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>

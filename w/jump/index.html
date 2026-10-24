@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>跳 tiào · jump · Little Words 小小字卡</title>
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="icon" href="../../assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="word theme-actions" style="--theme:#3DB86B">
+<header class="top">
+  <a class="back" href="../../index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="../../scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <a class="chip" href="../../index.html#actions"><span lang="zh-Hant-TW">動作</span> <span class="py">dòngzuò</span> <span class="en">· Actions</span></a>
+  <section class="hero">
+    <img class="art" src="../../assets/icons/jump.svg" alt="jump" width="200" height="200">
+    <h1 class="big" lang="zh-Hant-TW">跳</h1>
+    <p class="pinyin">tiào</p>
+    <p class="gloss en">jump</p>
+    <button class="play" id="play" type="button" data-say="跳" aria-label="Play the word">▶ <span lang="zh-Hant-TW">聽</span> <span class="py">tīng</span></button>
+    <p class="voice-note" id="voiceNote" hidden></p>
+  </section>
+  <section class="cards">
+    <button class="card-btn" type="button" data-open="roleplay">🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play</span></button>
+    <button class="card-btn" type="button" data-open="questions">❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Questions</span></button>
+  </section>
+  <nav class="pager"><a class="nav prev" href="../run/">← <span lang="zh-Hant-TW">跑</span></a><a class="nav next" href="../sit/"><span lang="zh-Hant-TW">坐</span> →</a></nav>
+</main>
+<dialog id="roleplay" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play: act it out</span></h2>
+  <ol class="script"><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="我們來跳高高！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">我們來跳高高！</span></div>
+  <div class="py">Wǒmen lái tiào gāogāo!</div>
+  <div class="en">Let&#x27;s jump up high!</div>
+  <div class="act en">🎭 Bend your knees and jump; hold hands.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="你看，我會跳高高！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">你看，我會跳高高！</span></div>
+  <div class="py">Nǐ kàn, wǒ huì tiào gāogāo!</div>
+  <div class="en">Look, I can jump up high!</div>
+  <div class="act en">🎭 Do it slowly and big.</div>
+</li><li class="line kid">
+  <div class="spk"><span lang="zh-Hant-TW">寶寶</span> <span class="py">bǎobǎo</span> <span class="en">· Little one</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="跳高高！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">跳高高！</span></div>
+  <div class="py">Tiào gāogāo!</div>
+  <div class="en">Jump up high!</div>
+  <div class="act en">🎭 Little one&#x27;s turn. Any try counts.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="波比也會跳高高！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">波比也會跳高高！</span></div>
+  <div class="py">Bōbǐ yě huì tiào gāogāo!</div>
+  <div class="en">Poppy can jump up high too!</div>
+  <div class="act en">🎭 Point to the friend in the picture.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="好棒！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">好棒！</span></div>
+  <div class="py">Hǎo bàng!</div>
+  <div class="en">Great job!</div>
+  <div class="act en">🎭 High five!</div>
+</li></ol>
+</dialog>
+<dialog id="questions" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Ask your little one</span></h2>
+  <ol class="qs"><li><div class="say"><button class="mini say-btn" type="button" data-say="波比在做什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">波比在做什麼？</span></div>
+  <div class="py">Bōbǐ zài zuò shénme?</div><div class="en">What is Poppy doing? (跳 tiào)</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="你會跳高高嗎？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">你會跳高高嗎？</span></div>
+  <div class="py">Nǐ huì tiào gāogāo ma?</div><div class="en">Can you jump up high? Show me!</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="你可以跳多高？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">你可以跳多高？</span></div>
+  <div class="py">Nǐ kěyǐ tiào duō gāo?</div><div class="en">How high can you jump?</div></li></ol>
+  <p class="tip en">Ask, wait 5 seconds, then answer it yourself with a smile. Pointing, sounds and words all count.</p>
+</dialog>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

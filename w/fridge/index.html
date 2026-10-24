@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>冰箱 bīngxiāng · fridge · Little Words 小小字卡</title>
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="icon" href="../../assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="word theme-house" style="--theme:#8B6FE0">
+<header class="top">
+  <a class="back" href="../../index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="../../scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <a class="chip" href="../../index.html#house"><span lang="zh-Hant-TW">房子</span> <span class="py">fángzi</span> <span class="en">· House</span></a>
+  <section class="hero">
+    <img class="art" src="../../assets/icons/fridge.svg" alt="fridge" width="200" height="200">
+    <h1 class="big" lang="zh-Hant-TW">冰箱</h1>
+    <p class="pinyin">bīngxiāng</p>
+    <p class="gloss en">fridge</p>
+    <button class="play" id="play" type="button" data-say="冰箱" aria-label="Play the word">▶ <span lang="zh-Hant-TW">聽</span> <span class="py">tīng</span></button>
+    <p class="voice-note" id="voiceNote" hidden></p>
+  </section>
+  <section class="cards">
+    <button class="card-btn" type="button" data-open="roleplay">🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play</span></button>
+    <button class="card-btn" type="button" data-open="questions">❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Questions</span></button>
+  </section>
+  <nav class="pager"><a class="nav prev" href="../sofa/">← <span lang="zh-Hant-TW">沙發</span></a><a class="nav next" href="../lamp/"><span lang="zh-Hant-TW">燈</span> →</a></nav>
+</main>
+<dialog id="roleplay" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play: act it out</span></h2>
+  <ol class="script"><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="冰箱在哪裡？我們去找冰箱！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">冰箱在哪裡？我們去找冰箱！</span></div>
+  <div class="py">Bīngxiāng zài nǎlǐ? Wǒmen qù zhǎo bīngxiāng!</div>
+  <div class="en">Where is the fridge? Let&#x27;s go find it!</div>
+  <div class="act en">🎭 Hold hands and walk around the room.</div>
+</li><li class="line kid">
+  <div class="spk"><span lang="zh-Hant-TW">寶寶</span> <span class="py">bǎobǎo</span> <span class="en">· Little one</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="這裡！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這裡！</span></div>
+  <div class="py">Zhèlǐ!</div>
+  <div class="en">Here!</div>
+  <div class="act en">🎭 Little one points to it or pats the sticker.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="對！這是冰箱。" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">對！這是冰箱。</span></div>
+  <div class="py">Duì! Zhè shì bīngxiāng.</div>
+  <div class="en">Yes! This is the fridge.</div>
+  <div class="act en">🎭 Touch it together and say the word slowly.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="冰箱好冷！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">冰箱好冷！</span></div>
+  <div class="py">Bīngxiāng hǎo lěng!</div>
+  <div class="en">The fridge is so cold!</div>
+  <div class="act en">🎭 Open it for two seconds, feel the cold air, close it.</div>
+</li></ol>
+</dialog>
+<dialog id="questions" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Ask your little one</span></h2>
+  <ol class="qs"><li><div class="say"><button class="mini say-btn" type="button" data-say="冰箱在哪裡？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">冰箱在哪裡？</span></div>
+  <div class="py">Bīngxiāng zài nǎlǐ?</div><div class="en">Where is the fridge? (point to it)</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="這是什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這是什麼？</span></div>
+  <div class="py">Zhè shì shénme?</div><div class="en">What is this?</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="冰箱裡面有什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">冰箱裡面有什麼？</span></div>
+  <div class="py">Bīngxiāng lǐmiàn yǒu shénme?</div><div class="en">What&#x27;s inside the fridge? (milk, 牛奶 niúnǎi)</div></li></ol>
+  <p class="tip en">Ask, wait 5 seconds, then answer it yourself with a smile. Pointing, sounds and words all count.</p>
+</dialog>
+<script src="../../assets/app.js"></script>
+</body>
+</html>
