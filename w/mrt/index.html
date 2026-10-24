@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>捷運 jiéyùn · MRT (metro) · Little Words 小小字卡</title>
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="icon" href="../../assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="word theme-transport" style="--theme:#7DB52A">
+<header class="top">
+  <a class="back" href="../../index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="../../scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <a class="chip" href="../../index.html#transport"><span lang="zh-Hant-TW">交通工具</span> <span class="py">jiāotōng gōngjù</span> <span class="en">· Transportation</span></a>
+  <section class="hero">
+    <img class="art" src="../../assets/icons/mrt.svg" alt="MRT (metro)" width="200" height="200">
+    <h1 class="big" lang="zh-Hant-TW">捷運</h1>
+    <p class="pinyin">jiéyùn</p>
+    <p class="gloss en">MRT (metro)</p>
+    <button class="play" id="play" type="button" data-say="捷運" aria-label="Play the word">▶ <span lang="zh-Hant-TW">聽</span> <span class="py">tīng</span></button>
+    <p class="voice-note" id="voiceNote" hidden></p>
+  </section>
+  <section class="cards">
+    <button class="card-btn" type="button" data-open="roleplay">🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play</span></button>
+    <button class="card-btn" type="button" data-open="questions">❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Questions</span></button>
+  </section>
+  <nav class="pager"><a class="nav prev" href="../taxi/">← <span lang="zh-Hant-TW">計程車</span></a><a class="nav next" href="../train/"><span lang="zh-Hant-TW">火車</span> →</a></nav>
+</main>
+<dialog id="roleplay" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play: act it out</span></h2>
+  <ol class="script"><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="捷運在哪裡？我們來找捷運！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">捷運在哪裡？我們來找捷運！</span></div>
+  <div class="py">Jiéyùn zài nǎlǐ? Wǒmen lái zhǎo jiéyùn!</div>
+  <div class="en">Where is the MRT train? Let&#x27;s find it!</div>
+  <div class="act en">🎭 Point to it on the page, then look for a real one outside.</div>
+</li><li class="line kid">
+  <div class="spk"><span lang="zh-Hant-TW">寶寶</span> <span class="py">bǎobǎo</span> <span class="en">· Little one</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="這裡！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這裡！</span></div>
+  <div class="py">Zhèlǐ!</div>
+  <div class="en">Here!</div>
+  <div class="act en">🎭 Little one points or pats the picture. Any point counts; cheer!</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="對！這是捷運。" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">對！這是捷運。</span></div>
+  <div class="py">Duì! Zhè shì jiéyùn.</div>
+  <div class="en">Yes! This is the MRT train.</div>
+  <div class="act en">🎭 Say the word slowly, then let your little one try.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="坐捷運，抓好扶手！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">坐捷運，抓好扶手！</span></div>
+  <div class="py">Zuò jiéyùn, zhuā hǎo fúshǒu!</div>
+  <div class="en">On the MRT: hold the handrail!</div>
+  <div class="act en">🎭 Hold up a hand like holding a strap; sway.</div>
+</li></ol>
+</dialog>
+<dialog id="questions" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Ask your little one</span></h2>
+  <ol class="qs"><li><div class="say"><button class="mini say-btn" type="button" data-say="捷運在哪裡？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">捷運在哪裡？</span></div>
+  <div class="py">Jiéyùn zài nǎlǐ?</div><div class="en">Where is the MRT train? (point to it)</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="這是什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這是什麼？</span></div>
+  <div class="py">Zhè shì shénme?</div><div class="en">What is this?</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="捷運門開了！我們上車嗎？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">捷運門開了！我們上車嗎？</span></div>
+  <div class="py">Jiéyùn mén kāi le! Wǒmen shàng chē ma?</div><div class="en">The MRT doors opened! Shall we get on?</div></li></ol>
+  <p class="tip en">Ask, wait 5 seconds, then answer it yourself with a smile. Pointing, sounds and words all count.</p>
+</dialog>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Picture words in Taiwan Mandarin (Traditional Chinese) with sound, role-play and questions.">
+<meta name="theme-color" content="#FF7A45">
+<title>肚子 dùzi · tummy · Little Words 小小字卡</title>
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="icon" href="../../assets/icons/friend-bean.svg" type="image/svg+xml">
+</head>
+<body class="word theme-body" style="--theme:#2B8FD8">
+<header class="top">
+  <a class="back" href="../../index.html" aria-label="All words">← 全部 <span class="en">All words</span></a>
+  <div class="tools">
+    <a class="btn ghost" href="../../scan.html">📷 掃描 <span class="en">Scan</span></a>
+    <button class="btn ghost" id="parentToggle" type="button" aria-pressed="true">EN</button>
+  </div>
+</header>
+
+<main>
+  <a class="chip" href="../../index.html#body"><span lang="zh-Hant-TW">身體</span> <span class="py">shēntǐ</span> <span class="en">· Body</span></a>
+  <section class="hero">
+    <img class="art" src="../../assets/icons/tummy.svg" alt="tummy" width="200" height="200">
+    <h1 class="big" lang="zh-Hant-TW">肚子</h1>
+    <p class="pinyin">dùzi</p>
+    <p class="gloss en">tummy</p>
+    <button class="play" id="play" type="button" data-say="肚子" aria-label="Play the word">▶ <span lang="zh-Hant-TW">聽</span> <span class="py">tīng</span></button>
+    <p class="voice-note" id="voiceNote" hidden></p>
+  </section>
+  <section class="cards">
+    <button class="card-btn" type="button" data-open="roleplay">🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play</span></button>
+    <button class="card-btn" type="button" data-open="questions">❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Questions</span></button>
+  </section>
+  <nav class="pager"><a class="nav prev" href="../fingers/">← <span lang="zh-Hant-TW">手指</span></a><a class="nav next" href="../knees/"><span lang="zh-Hant-TW">膝蓋</span> →</a></nav>
+</main>
+<dialog id="roleplay" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>🎭 <span lang="zh-Hant-TW">演一演</span> <span class="en">Role-play: act it out</span></h2>
+  <ol class="script"><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="肚子在哪裡？我們來找肚子！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">肚子在哪裡？我們來找肚子！</span></div>
+  <div class="py">Dùzi zài nǎlǐ? Wǒmen lái zhǎo dùzi!</div>
+  <div class="en">Where is your tummy? Let&#x27;s find it!</div>
+  <div class="act en">🎭 Touch it on your own body first, then find it on the picture.</div>
+</li><li class="line kid">
+  <div class="spk"><span lang="zh-Hant-TW">寶寶</span> <span class="py">bǎobǎo</span> <span class="en">· Little one</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="這裡！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這裡！</span></div>
+  <div class="py">Zhèlǐ!</div>
+  <div class="en">Here!</div>
+  <div class="act en">🎭 Little one points or pats the picture. Any point counts; cheer!</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="對！這是肚子。" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">對！這是肚子。</span></div>
+  <div class="py">Duì! Zhè shì dùzi.</div>
+  <div class="en">Yes! This is your tummy.</div>
+  <div class="act en">🎭 Say the word slowly, then let your little one try.</div>
+</li><li class="line grown">
+  <div class="spk"><span lang="zh-Hant-TW">大人</span> <span class="py">dàrén</span> <span class="en">· Grown-up</span></div>
+  <div class="say"><button class="mini say-btn" type="button" data-say="肚子餓了，咕嚕咕嚕！" aria-label="Play line">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">肚子餓了，咕嚕咕嚕！</span></div>
+  <div class="py">Dùzi è le, gūlū gūlū!</div>
+  <div class="en">Tummy&#x27;s hungry: rumble rumble!</div>
+  <div class="act en">🎭 Pat your tummies and make rumbly sounds.</div>
+</li></ol>
+</dialog>
+<dialog id="questions" class="pop">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>❓ <span lang="zh-Hant-TW">問一問</span> <span class="en">Ask your little one</span></h2>
+  <ol class="qs"><li><div class="say"><button class="mini say-btn" type="button" data-say="肚子在哪裡？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">肚子在哪裡？</span></div>
+  <div class="py">Dùzi zài nǎlǐ?</div><div class="en">Where is your tummy? (point to it)</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="這是什麼？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">這是什麼？</span></div>
+  <div class="py">Zhè shì shénme?</div><div class="en">What is this?</div></li><li><div class="say"><button class="mini say-btn" type="button" data-say="你的肚子飽了嗎？" aria-label="Play question">🔊</button>
+  <span class="zhline" lang="zh-Hant-TW">你的肚子飽了嗎？</span></div>
+  <div class="py">Nǐ de dùzi bǎo le ma?</div><div class="en">Is your tummy full?</div></li></ol>
+  <p class="tip en">Ask, wait 5 seconds, then answer it yourself with a smile. Pointing, sounds and words all count.</p>
+</dialog>
+<script src="../../assets/app.js"></script>
+</body>
+</html>
